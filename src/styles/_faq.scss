@@ -37,19 +37,24 @@
                 overflow: hidden;
                 padding: 0 24px;
                 transition: .5s ease;
+
+                &__list{
+                    padding-left: 20px;
+                    &__item{
+                        list-style: disc;
+                        padding: 10px 0;
+                    }
+                }
             }
 
             &--is-open{
                 .faq__questions__item__question::after{
-                    content: "-";
-                    
-
+                    content: "--";
                 }
 
                 .faq__questions__item__answer{
                     height: auto;
                     padding: 24px;
-                    color: rgb(247, 247, 114);
                     transition: .5s ease;
                 }
             }
